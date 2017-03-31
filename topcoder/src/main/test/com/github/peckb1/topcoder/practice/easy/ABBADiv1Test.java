@@ -1,4 +1,4 @@
-package peckb1.topcoder.practice.easy;
+package com.github.peckb1.topcoder.practice.easy;
 
 import org.junit.Assert;
 import org.junit.Before;

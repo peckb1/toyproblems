@@ -1,4 +1,4 @@
-package peckb1.topcoder.practice.easy;
+package com.github.peckb1.topcoder.practice.easy;
 
 import com.google.common.collect.Lists;
 import org.junit.Assert;

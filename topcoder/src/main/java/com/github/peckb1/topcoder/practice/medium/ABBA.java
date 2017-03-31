@@ -1,4 +1,4 @@
-package peckb1.topcoder.practice.medium;
+package com.github.peckb1.topcoder.practice.medium;
 
 /**
  * One day, Jamie noticed that many English words only use the letters A and B. Examples of such words include "AB"

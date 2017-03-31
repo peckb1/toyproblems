@@ -1,4 +1,4 @@
-package peckb1.topcoder.practice.easy;
+package com.github.peckb1.topcoder.practice.easy;
 
 /**
  * You are given two s: N and K. Lun the dog is interested in strings that satisfy the following conditions:
