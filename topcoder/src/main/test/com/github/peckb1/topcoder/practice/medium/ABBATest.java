@@ -1,4 +1,4 @@
-package peckb1.topcoder.practice.medium;
+package com.github.peckb1.topcoder.practice.medium;
 
 import org.junit.Assert;
 import org.junit.Before;
