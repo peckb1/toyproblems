@@ -13,24 +13,9 @@ package com.github.peckb1.topcoder.practice.hard;
  */
 public class ABC {
 
-    public static void main(String[] args) {
-        ABC abc = new ABC();
-        int min = 3;
-        int max = 30;
-
-        System.out.println(abc.createString(8, 21));
-        for (int n = min; n <= max; n++) {
-            System.out.println();
-            int maxK = (n * (n - 1)) / 2;
-            for (int k = 0; k <= maxK; k++) {
-                String abcString = abc.createString(n, k);
-                System.out.println(String.format("N = %s, K = %d --- %s", n, k, abcString));
-            }
-        }
-    }
-
     public String createString(int N, int K) {
-        // add in a coupld short circuits
+        // add in a couple short circuits
+
         // if we need no pairs - just use C's
         if (K == 0) {
             return fillWithCs(N);
@@ -133,7 +118,7 @@ public class ABC {
      * helper value for just adding to a String builder a bunch of times
      */
     private void append(StringBuilder builder, char character, int numToAdd) {
-        for(int i = 0; i < numToAdd; i++) {
+        for (int i = 0; i < numToAdd; i++) {
             builder.append(character);
         }
     }
