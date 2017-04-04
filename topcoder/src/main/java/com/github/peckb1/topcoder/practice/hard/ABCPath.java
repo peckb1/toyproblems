@@ -24,6 +24,10 @@ import java.util.Optional;
  * . . .
  * (spaces are for clarity only)
  * so, for this grid, your method should return 4.
+ * <p>
+ * This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction
+ * of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.
+ * (c)2003, TopCoder, Inc. All rights reserved.
  */
 public class ABCPath {
 
@@ -73,10 +77,10 @@ public class ABCPath {
                 char nodeValue = rowString.charAt(i);
 
                 Optional<Node> trueCenter = Optional.of(new Node(nodeValue));
-                Optional<Node> upperLeft   = getOrNull(rowIndex - 1, i - 1);
+                Optional<Node> upperLeft = getOrNull(rowIndex - 1, i - 1);
                 Optional<Node> upperCenter = getOrNull(rowIndex - 1, i);
-                Optional<Node> upperRight  = getOrNull(rowIndex - 1, i + 1);
-                Optional<Node> centerLeft  = i > 0 ? Optional.of(nodes.get(i - 1)) : Optional.empty();
+                Optional<Node> upperRight = getOrNull(rowIndex - 1, i + 1);
+                Optional<Node> centerLeft = i > 0 ? Optional.of(nodes.get(i - 1)) : Optional.empty();
 
                 trueCenter.ifPresent(node -> node.addNeighbor(upperLeft));
                 trueCenter.ifPresent(node -> node.addNeighbor(upperCenter));
