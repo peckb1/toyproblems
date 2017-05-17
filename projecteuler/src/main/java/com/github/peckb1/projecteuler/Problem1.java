@@ -12,21 +12,6 @@ import java.util.function.Predicate;
  */
 public class Problem1 {
 
-    private static final int LIMIT = 1_000;
-
-    public static void main(String[] args) {
-        Problem1 problem1 = new Problem1();
-
-        long t1 = System.currentTimeMillis();
-        BigInteger solution01 = problem1.sumOfMultiples(new int[]{3, 5}, LIMIT);
-        long t2 = System.currentTimeMillis();
-        BigInteger solution02 = problem1.sumOfMultiples(3, 5, LIMIT);
-        long t3 = System.currentTimeMillis();
-
-        System.out.println(String.format("%s millis : %s", (t2 - t1), solution01));
-        System.out.println(String.format("%s millis : %s", (t3 - t2), solution02));
-    }
-
     /**
      * Math method
      */
