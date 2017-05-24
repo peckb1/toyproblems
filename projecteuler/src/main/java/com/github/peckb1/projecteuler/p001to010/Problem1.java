@@ -1,4 +1,4 @@
-package com.github.peckb1.projecteuler;
+package com.github.peckb1.projecteuler.p001to010;
 
 import java.math.BigInteger;
 import java.util.Arrays;
