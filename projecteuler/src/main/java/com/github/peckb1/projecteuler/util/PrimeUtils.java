@@ -5,6 +5,10 @@ public class PrimeUtils {
     private PrimeUtils() { }
 
     public static boolean isPrimePE(long n) {
+        if (n < 0) {
+            return false;
+        }
+
         // filter out 1
         if (n == 1) {
             return false;
@@ -49,6 +53,11 @@ public class PrimeUtils {
     }
 
     public static boolean isPrime(long n) {
+        // positives only
+        if (n < 0) {
+            return false;
+        }
+
         // check if we are 2
         if (n == 2) {
             return true;

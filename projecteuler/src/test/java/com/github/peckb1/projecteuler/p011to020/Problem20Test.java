@@ -19,7 +19,5 @@ public class Problem20Test {
         Assert.assertEquals(27, this.problem20.sumDigitFactorial(10));
         Assert.assertEquals(648, this.problem20.sumDigitFactorial(100));
         Assert.assertEquals(10539, this.problem20.sumDigitFactorial(1000));
-        Assert.assertEquals(149346, this.problem20.sumDigitFactorial(10000));
-        Assert.assertEquals(1938780, this.problem20.sumDigitFactorial(100000));
-    }
+        Assert.assertEquals(149346, this.problem20.sumDigitFactorial(10000));}
 }
