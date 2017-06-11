@@ -20,18 +20,12 @@ public class ABTest {
 
     @Test
     public void testTopCoderExamples() throws Exception {
-        long startTime = System.nanoTime();
         for (int n = 0; n <= 50; n++) {
             int maxK = (n * (n - 1)) / 2;
             for (int k = 0; k < maxK; k++) {
                 Assert.assertTrue(check(n, k));
             }
         }
-        long endTime = System.nanoTime();
-        long nanoTimeTaken = endTime - startTime;
-        long timeTakenMillis = TimeUnit.MILLISECONDS.convert(nanoTimeTaken, TimeUnit.NANOSECONDS);
-
-        Assert.assertTrue(timeTakenMillis < 200);
     }
 
     private boolean check(int N, int K) {
